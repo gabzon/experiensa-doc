@@ -1,0 +1,554 @@
+This module manages all aspects of users and user types.
+<div class="ui image">
+    <a href="http://experiensa.com/wp-content/uploads/2015/11/users.png">
+        <img src="http://experiensa.com/wp-content/uploads/2015/11/users.png" alt="users" />
+    </a>
+</div>
+
+<h2>User Custom fields</h2>
+
+<div class="ui message">
+    User custom fields can be found in : piklist > parts > users > users.php
+</div>
+
+<section>
+    <h3>Social media links</h3>
+    <table class="ui table" style="font-size:10px">
+        <thead>
+            <tr>
+                <th width="20%">Label</th>
+                <th width="20%">Field type</th>
+                <th width="25%">Field name</th>
+                <th width="35%">Comments</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Facebook</td>
+                <td>text</td>
+                <td>user_facebook</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Twitter</td>
+                <td>text</td>
+                <td>user_twitter</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Google Plus</td>
+                <td>text</td>
+                <td>user_google_plus</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Linkedin</td>
+                <td>text</td>
+                <td>user_linkedin</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Instagram</td>
+                <td>text</td>
+                <td>user_instagram</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Pinterest</td>
+                <td>text</td>
+                <td>user_pinterest</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Skype</td>
+                <td>text</td>
+                <td>user_skype</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section>
+    <h3>Spoken languages</h3>
+    <table class="ui table" style="font-size:10px">
+        <thead>
+            <tr>
+                <th width="20%">Label</th>
+                <th width="20%">Field type</th>
+                <th width="25%">Field name</th>
+                <th width="35%">Comments</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Arabic</td>
+                <td>checkbox</td>
+                <td>user_language_arabic</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Chinese (Mandarin)</td>
+                <td>checkbox</td>
+                <td>user_language_mandarin</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Chinese (Cantonese)</td>
+                <td>checkbox</td>
+                <td>user_language_cantonese</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>English</td>
+                <td>checkbox</td>
+                <td>user_language_english</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Farsi (Persian)</td>
+                <td>checkbox</td>
+                <td>user_language_farsi</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>French</td>
+                <td>checkbox</td>
+                <td>user_language_french</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>German</td>
+                <td>checkbox</td>
+                <td>user_language_german</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Hindi</td>
+                <td>checkbox</td>
+                <td>user_language_hindi</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Italian</td>
+                <td>checkbox</td>
+                <td>user_language_italian</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Japanese</td>
+                <td>checkbox</td>
+                <td>user_language_japanese</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Korean</td>
+                <td>checkbox</td>
+                <td>user_language_korean</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Polish</td>
+                <td>checkbox</td>
+                <td>user_language_polish</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Portuguese</td>
+                <td>checkbox</td>
+                <td>user_language_portuguese</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Russian</td>
+                <td>checkbox</td>
+                <td>user_language_russian</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Spanish</td>
+                <td>checkbox</td>
+                <td>user_language_spanish</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Thai</td>
+                <td>checkbox</td>
+                <td>user_language_thai</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Turkish</td>
+                <td>checkbox</td>
+                <td>user_language_turkish</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Vietnamese</td>
+                <td>checkbox</td>
+                <td>user_language_vietnamese</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section>
+    <h3>Photo</h3>
+    <table class="ui table" style="font-size:10px">
+        <thead>
+            <tr>
+                <th width="20%">Label</th>
+                <th width="20%">Field type</th>
+                <th width="25%">Field name</th>
+                <th width="35%">Comments</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Photo</td>
+                <td>file</td>
+                <td>user_profile_photo</td>
+                <td>you should only upload 1</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section>
+    <h3>Phone(s)</h3>
+    <table class="ui table" style="font-size:10px">
+        <thead>
+            <tr>
+                <th width="20%">Label</th>
+                <th width="20%">Field type</th>
+                <th width="25%">Field name</th>
+                <th width="35%">Comments</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Phone</td>
+                <td>text</td>
+                <td>user_phone</td>
+                <td>Add more field</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section>
+    <h3>Birthday</h3>
+    <table class="ui table" style="font-size:10px">
+        <thead>
+            <tr>
+                <th width="20%">Label</th>
+                <th width="20%">Field type</th>
+                <th width="25%">Field name</th>
+                <th width="35%">Comments</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Birthday</td>
+                <td>DatePicker</td>
+                <td>user_birthday</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section>
+    <h3>Hobbies</h3>
+    <table class="ui table" style="font-size:10px">
+        <thead>
+            <tr>
+                <th width="20%">Label</th>
+                <th width="20%">Field type</th>
+                <th width="25%">Field name</th>
+                <th width="35%">Comments</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Hobbies</td>
+                <td>textarea</td>
+                <td>user_hobbies</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section>
+    <h3>Passport</h3>
+    <table class="ui table" style="font-size:10px">
+        <thead>
+            <tr>
+                <th width="20%">Label</th>
+                <th width="20%">Field type</th>
+                <th width="25%">Field name</th>
+                <th width="35%">Comments</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Country</td>
+                <td>Select Box</td>
+                <td>user_passport_country</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Passport number</td>
+                <td>text</td>
+                <td>user_passport_number</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Expiry date</td>
+                <td>text</td>
+                <td>user_passport_expiry_date</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Place of issue</td>
+                <td>text</td>
+                <td>user_passport_place_issue</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+<section>
+    <h3>Work</h3>
+    <h4>List of sectors</h4>
+    This is the list found
+    <ul>
+        <li>Aerospace, defense and security</li>
+        <li>Airline industry</li>
+        <li>Banking</li>
+        <li>Chemistry & pharma</li>
+        <li>Consumer goods</li>
+        <li>Health</li>
+        <li>Insurance</li>
+        <li>Manufacturing</li>
+        <li>Mining industry</li>
+        <li>Public sector</li>
+        <li>Services</li>
+        <li>Telecom</li>
+        <li>Tourism</li>
+        <li>Transport</li>
+        <li>Utilities & energy</li>
+    </ul>
+    <table class="ui table" style="font-size:10px">
+        <thead>
+            <tr>
+                <th width="20%">Label</th>
+                <th width="20%">Field type</th>
+                <th width="25%">Field name</th>
+                <th width="35%">Comments</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Occupation</td>
+                <td>text</td>
+                <td>user_work_occupation</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Sector</td>
+                <td>select box</td>
+                <td>user_work_sector</td>
+                <td>(options:)</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section>
+    <h3>Airplane preferences</h3>
+    <table class="ui table" style="font-size:10px">
+        <thead>
+            <tr>
+                <th width="20%">Label</th>
+                <th width="20%">Field type</th>
+                <th width="25%">Field name</th>
+                <th width="35%">Comments</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Economy</td>
+                <td>checkbox</td>
+                <td>user_airplane_preferences_economy</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Business Class</td>
+                <td>checkbox</td>
+                <td>user_airplane_preferences_business</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>First Class</td>
+                <td>checkbox</td>
+                <td>user_airplane_preferences_first</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Aile</td>
+                <td>checkbox</td>
+                <td>user_airplane_preferences_aile</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Window</td>
+                <td>checkbox</td>
+                <td>user_airplane_preferences_window</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Middle seat</td>
+                <td>checkbox</td>
+                <td>user_airplane_preferences_middle</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Chicken</td>
+                <td>checkbox</td>
+                <td>user_airplane_preferences_chicken</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Pasta</td>
+                <td>checkbox</td>
+                <td>user_airplane_preferences_pasta</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Vegetarian</td>
+                <td>checkbox</td>
+                <td>user_airplane_preferences_vegetarian</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Special / Gluten free</td>
+                <td>checkbox</td>
+                <td>user_airplane_preferences_</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section>
+    <h3>Status</h3>
+    <table class="ui table" style="font-size:10px">
+        <thead>
+            <tr>
+                <th width="20%">Label</th>
+                <th width="20%">Field type</th>
+                <th width="25%">Field name</th>
+                <th width="35%">Comments</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Marital Status</td>
+                <td>Select Box</td>
+                <td>user_marital_status</td>
+                <td>(options: single, in couple, married, divorced, widow/widower, complicated)</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section>
+    <h3>Favorite color</h3>
+    <table class="ui table" style="font-size:10px">
+        <thead>
+            <tr>
+                <th width="20%">Label</th>
+                <th width="20%">Field type</th>
+                <th width="25%">Field name</th>
+                <th width="35%">Comments</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Red</td>
+                <td>checkbox</td>
+                <td>user_color_red</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Green</td>
+                <td>checkbox</td>
+                <td>user_color_green</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Yellow</td>
+                <td>checkbox</td>
+                <td>user_color_yellow</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Blue</td>
+                <td>checkbox</td>
+                <td>user_color_blue</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Pink</td>
+                <td>checkbox</td>
+                <td>user_color_pink</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Brown</td>
+                <td>checkbox</td>
+                <td>user_color_brown</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Purple</td>
+                <td>checkbox</td>
+                <td>user_color_purple</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Black</td>
+                <td>checkbox</td>
+                <td>user_color_black</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Grey</td>
+                <td>checkbox</td>
+                <td>user_color_grey</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Violet</td>
+                <td>checkbox</td>
+                <td>user_color_violet</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>White</td>
+                <td>checkbox</td>
+                <td>user_color_white</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Orange</td>
+                <td>checkbox</td>
+                <td>user_color_orange</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</section>

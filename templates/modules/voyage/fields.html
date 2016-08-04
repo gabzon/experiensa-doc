@@ -1,0 +1,338 @@
+<section class="custom-field-section">
+    <h2 id="custom-field">4. Custom fields</h2>
+    <hr>
+    Custom fields are added in the piklist folder
+    <ul>
+        <li><a href="#general-section">4.1 General</a></li>
+        <li><a href="#flight-section">4.2 Flight information</a></li>
+        <li><a href="#hotel-section">4.3 Accomodation information</a></li>
+        <li><a href="#itinerary-section">4.4 Itinerary information</a></li>
+    </ul>
+    <div class="ui image">
+        <a href="http://experiensa.com/wp-content/uploads/2015/10/flights.png"><img src="http://experiensa.com/wp-content/uploads/2015/10/flights.png" alt="flights" class="alignnone size-medium wp-image-485" /></a>
+    </div>
+
+    <section id="general-section">
+        <h3>4.1 General</h3>
+
+        <div class="ui image">
+            <a href="http://experiensa.com/wp-content/uploads/2015/10/general.png"><img src="http://experiensa.com/wp-content/uploads/2015/10/general.png" alt="general" /></a>
+        </div>
+        <br>&nbsp;
+        <table class="ui table" style="font-size:10px">
+            <thead>
+                <tr>
+                    <th width="20%">Label</th>
+                    <th width="20%">Field type</th>
+                    <th width="25%">Field name</th>
+                    <th width="35%">Comments</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Price</td>
+                    <td>text</td>
+                    <td>product_price</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Currency</td>
+                    <td>text</td>
+                    <td>product_currency</td>
+                    <td>To use if it is different from the main currency</td>
+                </tr>
+                <tr>
+                    <td>Expiry date</td>
+                    <td>DatePicker</td>
+                    <td>product_expiry_date</td>
+                    <td>If today is > than expiry date then change product status to inactive</td>
+                </tr>
+                <tr>
+                    <td>Sell to other agencies</td>
+                    <td>checkbox</td>
+                    <td>product_is_tour_operator</td>
+                    <td>When check display percentage field</td>
+                </tr>
+                <tr>
+                    <td>Percentage(%)</td>
+                    <td>number</td>
+                    <td>product_tour_operating_percentage</td>
+                    <td>This field is invisible, it will be display with the condition that "sell to other agencies" is checked</td>
+                </tr>
+                <tr>
+                    <td>Slogan</td>
+                    <td>text</td>
+                    <td>product_slogan</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Additional information & Conditions</td>
+                    <td>textarea</td>
+                    <td>product_information_conditions</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Photo Gallery</td>
+                    <td>File Upload</td>
+                    <td>product_photos</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Flight</td>
+                    <td>checkbox</td>
+                    <td>product_has_flight</td>
+                    <td>When check display flight group</td>
+                </tr>
+                <tr>
+                    <td>Accommodation</td>
+                    <td>checkbox</td>
+                    <td>product_has_accommodation</td>
+                    <td>When check display accommodation group</td>
+                </tr>
+                <tr>
+                    <td>Itinerary</td>
+                    <td>checkbox</td>
+                    <td>product_has_itinerary</td>
+                    <td>When check display itinerary group</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="flight-section">
+        <h3>4.2 Flights information</h3>
+        <div class="ui image">
+            <a href="http://experiensa.com/wp-content/uploads/2015/10/flights-section.png"><img src="http://experiensa.com/wp-content/uploads/2015/10/flights-section.png" alt="flights-section" /></a>
+        </div>
+        <br>&nbsp;
+        <table class="ui table" style="font-size:10px">
+            <thead>
+                <tr>
+                    <th width="20%">Label</th>
+                    <th width="20%">Field type</th>
+                    <th width="25%">Field name</th>
+                    <th width="35%">Comments</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Airline</td>
+                    <td>text</td>
+                    <td>product_airline</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Flight number</td>
+                    <td>text</td>
+                    <td>product_flight_number</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Class</td>
+                    <td>Select box</td>
+                    <td>product_flight_class</td>
+                    <td>Options:(Economy, First, Business). Default:Economy</td>
+                </tr>
+                <tr>
+                    <td>Departure city</td>
+                    <td>text</td>
+                    <td>product_departure_city</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Departure date</td>
+                    <td>DatePicker</td>
+                    <td>product_departure_date</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Departure time</td>
+                    <td>text</td>
+                    <td>product_departure_time</td>
+                </tr>
+                <tr>
+                    <td>Arrival city</td>
+                    <td>text</td>
+                    <td>product_arrival_city</td>
+                </tr>
+                <tr>
+                    <td>Arrival date</td>
+                    <td>DatePicker</td>
+                    <td>product_arrival_date</td>
+                    <td>format dd/mm/yyyy</td>
+                </tr>
+                <tr>
+                    <td>Arrival time</td>
+                    <td>text</td>
+                    <td>product_arrival_time</td>
+                    <td>validate format hh:mm, 24h system</td>
+                </tr>
+                <tr>
+                    <td>Hand bag quantity</td>
+                    <td>Select box</td>
+                    <td>product_handbag_qty</td>
+                    <td>(values : [0,1, 2], 1 = default)</td>
+                </tr>
+                <tr>
+                    <td>hand bag weight</td>
+                    <td>number</td>
+                    <td>product_handbag_weight</td>
+                    <td>validate is number</td>
+                </tr>
+                <tr>
+                    <td>Luggage quantity</td>
+                    <td>Select box</td>
+                    <td>product_luggage_qty</td>
+                    <td>(0,1, 2)(1 = default)</td>
+                </tr>
+                <tr>
+                    <td>Luggage weight</td>
+                    <td>number</td>
+                    <td>product_luggage_weight</td>
+                    <td>validate: is number</td>
+                </tr>
+                <tr>
+                    <td>Refundable</td>
+                    <td>Checkbox</td>
+                    <td>product_refund</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Flexible</td>
+                    <td>Checkbox</td>
+                    <td>product_flexible</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Coments</td>
+                    <td>Text</td>
+                    <td>product_comments</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="hotel-section">
+        <div class="ui image">
+            <h3>4.3 Accomodation information</h3>
+            <a href="http://experiensa.com/wp-content/uploads/2015/10/accomodation.png"><img src="http://experiensa.com/wp-content/uploads/2015/10/accomodation.png" alt="accomodation" /></a>
+        </div>
+        <br>&nbsp;
+        <table class="ui table" style="font-size:10px">
+            <thead>
+                <tr>
+                    <th width="20%">Label</th>
+                    <th width="20%">Field type</th>
+                    <th width="25%">Field name</th>
+                    <th width="35%">Comments</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Etablishment name</td>
+                    <td>text</td>
+                    <td>product_etablishment_name</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Etablishment type</td>
+                    <td>Select box</td>
+                    <td>product_etablishment_type</td>
+                    <td>values: hotel, b&b, residence, private apartment, airbnb</td>
+                </tr>
+                <tr>
+                    <td>Rating(stars)</td>
+                    <td>Select box</td>
+                    <td>product_etablishment_rating</td>
+                    <td>values: 1-5</td>
+                </tr>
+                <tr>
+                    <td>Check-in Date</td>
+                    <td>DatePicker</td>
+                    <td>product_etablishment_checkin_date</td>
+                    <td>format dd/mm/yyyy</td>
+                </tr>
+                <tr>
+                    <td>Check-in Time</td>
+                    <td>text</td>
+                    <td>product_etablishment_checkin_time</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Check-out Date</td>
+                    <td>DatePicker</td>
+                    <td>product_etablishment_checkout_date</td>
+                    <td>(format dd/mm/yyyy)</td>
+                </tr>
+                <tr>
+                    <td>Check-out Time</td>
+                    <td>text</td>
+                    <td>product_etablishment_checkout_time</td>
+                    <td>validate time</td>
+                </tr>
+                <tr>
+                    <td>Photo Gallery</td>
+                    <td>File Upload</td>
+                    <td>product_etablishment_photos</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Comments</td>
+                    <td>textarea</td>
+                    <td>product_etablishment_comments</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="itinerary-section">
+        <h3>4.4 Itinerary information</h3>
+        <div class="ui image">
+            <a href="http://experiensa.com/wp-content/uploads/2015/10/itinerary.png"><img src="http://experiensa.com/wp-content/uploads/2015/10/itinerary.png" alt="itinerary" /></a>
+        </div>
+        <br>&nbsp;
+        <table class="ui table" style="font-size:10px">
+            <thead>
+                <tr>
+                    <th width="20%">Label</th>
+                    <th width="20%">Field type</th>
+                    <th width="25%">Field name</th>
+                    <th width="35%">Comments</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Day</td>
+                    <td>text</td>
+                    <td>product_itinerary_day</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Title</td>
+                    <td>text</td>
+                    <td>product_itinerary_title</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Subtitle</td>
+                    <td>text</td>
+                    <td>product_itinerary_subtitle</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Description</td>
+                    <td>textarea</td>
+                    <td>product_itinerary_description</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Photo Gallery</td>
+                    <td>FileUplaod</td>
+                    <td>product_itinerary_photos</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</section><!-- .custom-field-section -->
